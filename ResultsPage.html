@@ -6,7 +6,7 @@
     <title>Search Results</title>
     <style>
         html {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgb(226, 8, 8))
+            background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgb(243, 41, 236))
             /* background-repeat: no-repeat; */
             /* background-size: 100% 100%;
             background-attachment: fixed; */
@@ -113,7 +113,7 @@
                             <p class="right"> Units: ${result['CONFIRMED UNITS']} </p>
 
                         </div>
-                        <a href="moreinformation.html" target="_blank" onclick="info(${encodeURIComponent(result)})">More Info</a>
+
                     </div>`;
                 });
             } else {
@@ -121,9 +121,6 @@
             }
         });
 
-        function info(result) {
-            window.sessionStorage.setItem("Info", JSON.stringify(result));
-        }
     </script>
 </body>
 </html>
